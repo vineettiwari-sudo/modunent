@@ -52,6 +52,70 @@
     <div class="preview-card"></div>
     <div class="preview-card"></div>
   </section>
+<!-- COMPONENT SHOWCASE -->
+<section class="components-section">
 
+  <h2 class="section-title">Featured Components</h2>
+
+  <div class="components-grid">
+
+    <!-- BUTTON CARD -->
+    <div class="component-card">
+      <div class="component-preview">
+        <button class="demo-btn primary">Primary Button</button>
+      </div>
+      <div class="component-body">
+        <h3>Buttons</h3>
+        <p>High-converting CTA buttons with hover animation.</p>
+        <button class="copy-btn" onclick="copyCSS('button')">Copy CSS</button>
+      </div>
+    </div>
+
+    <!-- TOGGLE CARD -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="toggle" onclick="toggleSwitch(this)">
+          <div class="toggle-thumb"></div>
+        </div>
+      </div>
+      <div class="component-body">
+        <h3>Toggle</h3>
+        <p>Smooth animated toggle for settings.</p>
+        <button class="copy-btn" onclick="copyCSS('toggle')">Copy CSS</button>
+      </div>
+    </div>
+
+    <!-- COUNTDOWN CARD -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="countdown" id="countdown">
+          <div class="cd-box">
+            <span id="cd-h">12</span>
+            <small>HRS</small>
+          </div>
+          <div class="cd-box">
+            <span id="cd-m">30</span>
+            <small>MIN</small>
+          </div>
+          <div class="cd-box">
+            <span id="cd-s">45</span>
+            <small>SEC</small>
+          </div>
+        </div>
+      </div>
+      <div class="component-body">
+        <h3>Countdown</h3>
+        <p>Urgency timer for product drops & sales.</p>
+        <button class="copy-btn" onclick="copyCSS('countdown')">Copy CSS</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TOAST -->
+<div id="toast" class="toast">
+  <span id="toast-msg">Copied!</span>
+</div>
 </body>
 </html>
