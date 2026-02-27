@@ -12,15 +12,93 @@
 </head>
 
 <body>
-
+<!-- ================= HOME ================= -->
 <div id="home-page">
-  <!-- Your Home Content Here -->
+
+  <nav class="hp-nav">
+    <a href="#" class="logo">Modu<span>nent</span></a>
+    <button class="btn-primary" onclick="gp('lib')">
+      Explore Library
+    </button>
+  </nav>
+
+  <section class="hero">
+    <h1>Free E-Commerce UI Library</h1>
+    <p>Modern components built for real Shopify & SaaS products.</p>
+    <button class="btn-primary" onclick="gp('lib')">
+      Explore All Elements
+    </button>
+  </section>
+
 </div>
 
+
+<!-- ================= LIBRARY ================= -->
 <div id="library-page">
-  <!-- Your Library Content Here -->
-</div>
 
+  <div class="lib-tabs">
+    <button class="lib-tab-btn active" data-tab="all">All</button>
+    <button class="lib-tab-btn" data-tab="product-cards">Product Cards</button>
+    <button class="lib-tab-btn" data-tab="buttons">Buttons</button>
+    <button class="lib-tab-btn" data-tab="qty">Quantity</button>
+    <button class="lib-tab-btn" data-tab="tags">Tags</button>
+    <button class="lib-tab-btn" data-tab="discount">Discount</button>
+    <button class="lib-tab-btn" data-tab="badges">Badges</button>
+    <button class="lib-tab-btn" data-tab="navigation">Navigation</button>
+    <button class="lib-tab-btn" data-tab="announcements">Announcements</button>
+    <button class="lib-tab-btn" data-tab="filters">Filters</button>
+    <button class="lib-tab-btn" data-tab="forms">Forms</button>
+  </div>
+
+  <div class="lib-content">
+
+    <div class="comp-sec active" id="sec-all">
+      <h2>All Components</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-product-cards">
+      <h2>Product Cards</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-buttons">
+      <h2>Buttons</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-qty">
+      <h2>Quantity</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-tags">
+      <h2>Tags</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-discount">
+      <h2>Discount</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-badges">
+      <h2>Badges</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-navigation">
+      <h2>Navigation</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-announcements">
+      <h2>Announcements</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-filters">
+      <h2>Filters</h2>
+    </div>
+
+    <div class="comp-sec" id="sec-forms">
+      <h2>Forms</h2>
+    </div>
+
+  </div>
+
+</div>
 <script src="assets/js/script.js"></script>
 
 </body>
