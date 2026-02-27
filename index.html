@@ -1,159 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modunent – UI Library</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-<!-- ================= HOME ================= -->
+<!-- ================= HOME PAGE ================= -->
 <div id="home-page">
 
   <nav class="hp-nav">
-    <a href="#" class="logo">Modu<span>nent</span></a>
-    <button class="btn-primary" onclick="gp('lib')">
-      Explore Library
-    </button>
+    <div class="logo">Modu<span>nent</span></div>
+    <button class="btn-primary" onclick="gp('lib')">Explore Library</button>
   </nav>
 
- <section class="hero" style="position:relative; padding:120px 24px;">
+  <section class="hero">
 
-  <div style="
-    position:absolute;
-    width:600px;
-    height:600px;
-    background:radial-gradient(circle, var(--acg), transparent 70%);
-    top:-200px;
-    left:50%;
-    transform:translateX(-50%);
-    filter:blur(80px);
-    opacity:.6;
-    pointer-events:none;
-  "></div>
+    <div class="badge">
+      ● FREE E-COMMERCE UI LIBRARY
+    </div>
 
-  <h1 style="
-    font-size:56px;
-    font-weight:800;
-    margin-bottom:20px;
-    letter-spacing:-1px;
-  ">
-    Free E-Commerce UI
-    <span style="color:var(--ac);">Library</span>
-  </h1>
+    <h1 class="hero-title">
+      Build e-commerce <br>
+      <span>interfaces faster</span>
+    </h1>
 
-  <p style="
-    color:var(--mt2);
-    max-width:680px;
-    margin:0 auto 36px;
-    font-size:18px;
-  ">
-    Production-ready components built for Shopify,
-    SaaS and D2C brands.
-    Clean. Minimal. Conversion-focused.
-  </p>
+    <p class="hero-sub">
+      57+ production-ready components. Accessible, animated,
+      and built for real e-commerce products — free forever.
+    </p>
 
-  <div style="display:flex; gap:18px; justify-content:center;">
+    <div class="hero-search">
+      <input id="hero-search" type="text"
+        placeholder="Search components, buttons, cards...">
+      <button onclick="heroSearch()">Search</button>
+    </div>
 
-    <button class="btn-primary" onclick="gp('lib')">
-      Explore All Elements
-    </button>
+  </section>
 
-    <button
-      style="
-        background:transparent;
-        border:1px solid var(--bd2);
-        color:var(--tx);
-        padding:8px 18px;
-        border-radius:8px;
-        font-size:.85rem;
-        cursor:pointer;
-        font-weight:600;
-      "
-      onclick="alert('Documentation coming soon')"
-    >
-      View Docs
-    </button>
+  <section class="preview-grid">
 
-  </div>
+    <div class="preview-card"></div>
+    <div class="preview-card"></div>
+    <div class="preview-card"></div>
+    <div class="preview-card"></div>
+    <div class="preview-card"></div>
+    <div class="preview-card"></div>
 
-</section>
+  </section>
 
 </div>
 
 
-<!-- ================= LIBRARY ================= -->
+<!-- ================= LIBRARY PAGE ================= -->
 <div id="library-page">
+
+  <div class="lib-header">
+    <div class="logo" onclick="gp('home')" style="cursor:pointer">
+      ← Modu<span>nent</span>
+    </div>
+    <div class="lib-title">UI ELEMENTS LIBRARY</div>
+  </div>
 
   <div class="lib-tabs">
     <button class="lib-tab-btn active" data-tab="all">All</button>
     <button class="lib-tab-btn" data-tab="product-cards">Product Cards</button>
     <button class="lib-tab-btn" data-tab="buttons">Buttons</button>
-    <button class="lib-tab-btn" data-tab="qty">Quantity</button>
+    <button class="lib-tab-btn" data-tab="qty">Quantity Selectors</button>
     <button class="lib-tab-btn" data-tab="tags">Tags</button>
-    <button class="lib-tab-btn" data-tab="discount">Discount</button>
+    <button class="lib-tab-btn" data-tab="discount">Discount Pills</button>
     <button class="lib-tab-btn" data-tab="badges">Badges</button>
     <button class="lib-tab-btn" data-tab="navigation">Navigation</button>
     <button class="lib-tab-btn" data-tab="announcements">Announcements</button>
-    <button class="lib-tab-btn" data-tab="filters">Filters</button>
+    <button class="lib-tab-btn" data-tab="filters">Filters & Sorting</button>
     <button class="lib-tab-btn" data-tab="forms">Forms</button>
   </div>
 
   <div class="lib-content">
 
-    <div class="comp-sec active" id="sec-all">
-      <h2>All Components</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-product-cards">
-      <h2>Product Cards</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-buttons">
-      <h2>Buttons</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-qty">
-      <h2>Quantity</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-tags">
-      <h2>Tags</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-discount">
-      <h2>Discount</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-badges">
-      <h2>Badges</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-navigation">
-      <h2>Navigation</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-announcements">
-      <h2>Announcements</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-filters">
-      <h2>Filters</h2>
-    </div>
-
-    <div class="comp-sec" id="sec-forms">
-      <h2>Forms</h2>
-    </div>
+    <div class="comp-sec active" id="sec-all"></div>
+    <div class="comp-sec" id="sec-product-cards"></div>
+    <div class="comp-sec" id="sec-buttons"></div>
+    <div class="comp-sec" id="sec-qty"></div>
+    <div class="comp-sec" id="sec-tags"></div>
+    <div class="comp-sec" id="sec-discount"></div>
+    <div class="comp-sec" id="sec-badges"></div>
+    <div class="comp-sec" id="sec-navigation"></div>
+    <div class="comp-sec" id="sec-announcements"></div>
+    <div class="comp-sec" id="sec-filters"></div>
+    <div class="comp-sec" id="sec-forms"></div>
 
   </div>
 
 </div>
-<script src="assets/js/script.js"></script>
-
-</body>
-</html>
