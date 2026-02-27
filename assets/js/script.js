@@ -123,3 +123,60 @@ document.addEventListener('DOMContentLoaded', function(){
   setInterval(shuffleBars, 2000);
 
 });
+// ================= NEW HOME INTERACTIONS =================
+
+// Toggle Switch
+function toggleSwitch(el) {
+  el.classList.toggle("active");
+}
+
+// Countdown Logic
+function updateCountdown() {
+  const h = document.getElementById("cd-h");
+  const m = document.getElementById("cd-m");
+  const s = document.getElementById("cd-s");
+
+  if (!h || !m || !s) return;
+
+  let sec = parseInt(s.textContent);
+  sec--;
+
+  if (sec < 0) {
+    sec = 59;
+    let min = parseInt(m.textContent) - 1;
+
+    if (min < 0) {
+      min = 59;
+      let hr = parseInt(h.textContent) - 1;
+      if (hr < 0) hr = 12;
+      h.textContent = hr;
+    }
+
+    m.textContent = min;
+  }
+
+  s.textContent = sec;
+}
+
+setInterval(updateCountdown, 1000);
+
+// Copy CSS simulation
+function copyCSS(name) {
+  navigator.clipboard.writeText("CSS for " + name);
+  showToast("CSS copied: " + name);
+}
+
+// Toast
+function showToast(msg) {
+  const toast = document.getElementById("toast");
+  const toastMsg = document.getElementById("toast-msg");
+
+  if (!toast || !toastMsg) return;
+
+  toastMsg.textContent = msg;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2500);
+}
