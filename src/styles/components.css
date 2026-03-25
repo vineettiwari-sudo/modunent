@@ -7,23 +7,18 @@
   max-width: 78rem;
   z-index: 100;
   border-radius: 999px;
-  /* Glass layer: low-opacity white over the light gradient — lets page colour bleed through */
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.38) 0%,
-    rgba(240, 246, 255, 0.28) 100%
-  );
-  backdrop-filter: blur(24px) saturate(2) brightness(1.04);
-  -webkit-backdrop-filter: blur(24px) saturate(2) brightness(1.04);
-  /* Crisp glass-edge borders */
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-bottom-color: rgba(64, 96, 240, 0.18);
-  /* Lift shadow + inner top shine */
+  /* Frosted blue-tinted glass — distinct from the page's light gradient */
+  background: rgba(180, 208, 255, 0.28);
+  backdrop-filter: blur(28px) saturate(2.2);
+  -webkit-backdrop-filter: blur(28px) saturate(2.2);
+  /* Strong visible borders for glass edge definition */
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 1.5px solid rgba(64, 96, 240, 0.25);
+  /* Prominent lift shadow */
   box-shadow:
-    0 8px 32px rgba(64, 96, 240, 0.13),
-    0 2px 8px rgba(0, 0, 0, 0.07),
-    inset 0 1px 0 rgba(255, 255, 255, 0.95),
-    inset 0 -1px 0 rgba(64, 96, 240, 0.08);
+    0 8px 32px rgba(64, 96, 240, 0.18),
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .navbar .container.navbar-container {
@@ -565,6 +560,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   border-bottom: 1px solid rgba(148, 163, 184, 0.16);
 }
 
@@ -3562,9 +3558,32 @@
 .preview-light-theme .cs-volume-range::-webkit-slider-thumb {
   background: #4060f0;
 }
-/* Showcase card inner bg: give very subtle tinted bg to cards so outline elements separate from card white */
+/* Showcase card inner bg: blue-tinted so white/outline elements separate from background */
 .preview-light-theme .showcase-card {
-  background: rgba(248, 250, 255, 0.9);
+  background: rgba(228, 238, 255, 0.85);
+}
+/* Strengthen outline/transparent elements that were invisible on near-white */
+.preview-light-theme .cs-square {
+  border-color: rgba(24, 24, 27, 0.5);
+}
+.preview-light-theme .cs-btn-outline {
+  color: #1e293b;
+  border-color: rgba(24, 24, 27, 0.55);
+  background: rgba(255, 255, 255, 0.45);
+}
+.preview-light-theme .cs-btn-caps {
+  border-color: rgba(24, 24, 27, 0.55);
+  color: #1e293b;
+  background: rgba(255, 255, 255, 0.45);
+}
+.preview-light-theme .cs-btn-plus {
+  border-color: rgba(24, 24, 27, 0.55);
+  color: #1e293b;
+  background: rgba(255, 255, 255, 0.45);
+}
+.preview-light-theme .cs-btn-modern {
+  border-color: rgba(29, 184, 100, 0.7);
+  color: #15803d;
 }
 
 /* Element preview – Inputs: constrain width so input is not stretched */
