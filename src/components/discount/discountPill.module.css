@@ -1,0 +1,45 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  padding: 0.2rem 0.52rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: opacity var(--motion-fast) ease, filter var(--motion-fast) ease;
+}
+
+.label {
+  opacity: 0.9;
+}
+
+.value {
+  font-variant-numeric: tabular-nums;
+}
+
+.percentage,
+.amount {
+  background: color-mix(in srgb, var(--color-danger) 88%, transparent);
+  color: var(--color-text-inverse);
+}
+
+.bogo {
+  background: color-mix(in srgb, var(--color-warning) 90%, transparent);
+  color: var(--color-bg);
+}
+
+.member {
+  background: color-mix(in srgb, var(--color-primary) 88%, transparent);
+  color: var(--color-text-inverse);
+}
+
+.expired {
+  opacity: 0.58;
+  filter: grayscale(0.35);
+}
+
+.disabled {
+  opacity: 0.42;
+}

@@ -1,0 +1,21 @@
+@import "./styles/semantic-theme.css";
+@import "./styles/design-tokens.css";
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-surface: rgb(var(--surface));
+  --color-elevated: rgb(var(--elevated));
+  --color-card: rgb(var(--card));
+  --color-foreground: rgb(var(--foreground));
+  --color-border: rgb(var(--border));
+  --color-primary: rgb(var(--primary));
+  --color-primary-foreground: rgb(var(--primary-foreground));
+  --color-secondary: rgb(var(--secondary));
+  --color-muted: rgb(var(--muted));
+}
+@source "../lib/**/*.{js,ts,jsx,tsx}";
+@import "./styles/tokens.css";
+@import "./styles/themes.css";
+@import "./styles/theme.css";
+@import "./styles/layout.css";
+@import "./styles/components.css";

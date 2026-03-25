@@ -1,0 +1,81 @@
+const elements = [
+  {
+    id: "toggle-switch",
+    title: "Toggle Switch",
+    category: "inputs",
+    description: "Animated toggle switches with smooth transitions and multiple states",
+    previewType: "toggle",
+  },
+  {
+    id: "checkbox-group",
+    title: "Checkbox Group",
+    category: "inputs",
+    description: "Accessible checkbox groups with custom visuals and controlled states",
+    previewType: "checkbox",
+  },
+  {
+    id: "search-input",
+    title: "Search Input",
+    category: "inputs",
+    description: "Modern search fields with icon actions and focus ring behavior",
+    previewType: "input",
+  },
+  {
+    id: "gradient-button",
+    title: "Gradient Button",
+    category: "buttons",
+    description: "Primary gradient CTA buttons with hover lift and glow treatments",
+    previewType: "button",
+  },
+  {
+    id: "icon-button-set",
+    title: "Icon Button Set",
+    category: "buttons",
+    description: "Compact icon actions for cart, wishlist, search, and utility controls",
+    previewType: "button",
+  },
+  {
+    id: "hero-layout",
+    title: "Hero Layout",
+    category: "layouts",
+    description: "Balanced hero scaffolds with headline, supporting copy, and action rows",
+    previewType: "layout",
+  },
+  {
+    id: "feature-grid",
+    title: "Feature Grid",
+    category: "layouts",
+    description: "Responsive feature grids for value props, highlights, and quick comparisons",
+    previewType: "layout",
+  },
+  {
+    id: "sticky-navbar",
+    title: "Sticky Navbar",
+    category: "navigation",
+    description: "Translucent sticky navigation bars with compact CTA alignment",
+    previewType: "nav",
+  },
+  {
+    id: "tab-navigation",
+    title: "Tab Navigation",
+    category: "navigation",
+    description: "Interactive tab systems for category filtering and section switching",
+    previewType: "nav",
+  },
+  {
+    id: "toast-alert",
+    title: "Toast Alert",
+    category: "feedback",
+    description: "Stackable toast notifications with severity states and motion",
+    previewType: "feedback",
+  },
+  {
+    id: "progress-bar",
+    title: "Progress Bar",
+    category: "feedback",
+    description: "Animated progress bars for loading, step completion, and upload states",
+    previewType: "feedback",
+  },
+]
+
+export default elements

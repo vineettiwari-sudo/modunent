@@ -1,0 +1,87 @@
+:root {
+  /* Structure */
+  --radius-md: 12px;
+
+  /* Button sizes – ONLY sm | md | lg. Map: sm=24px, md=36px, lg=44px. Icon: sm=12px, md=16px, lg=18px */
+  --button-height-small: 24px;
+  --button-padding-x-small: 12px;
+  --button-height-default: 36px;
+  --button-padding-x-default: 16px;
+  --button-height-large: 44px;
+  --button-padding-x-large: 24px;
+
+  /* Legacy / primary CTA default */
+  --button-height: var(--button-height-default);
+  --button-padding-x: var(--button-padding-x-default);
+
+  /* Colors (overridden by themes.css for site-wide stone + emerald) */
+  --color-primary: #ff4e45;
+  --color-primary-hover: #e03d35;
+  --color-primary-active: #c42e27;
+
+  --color-neutral-0: #FFFFFF;
+  --color-neutral-100: #F8FAFC;
+  --color-neutral-200: #E5E7EB;
+  --color-neutral-300: #D1D5DB;
+  --color-neutral-600: #4B5563;
+  --color-neutral-900: #020617;
+
+  --color-danger: #DC2626;
+  --color-danger-hover: #B91C1C;
+
+  /* Shadow */
+  --shadow-soft: 0 4px 12px rgba(0,0,0,0.25);
+  --shadow-subtle: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Button size utilities – ONLY sm | md (default) | lg. sm=24px px-3 text-xs, md=36px px-4 text-sm, lg=44px px-6 text-base */
+.btn-size-small {
+  height: var(--button-height-small);
+  padding-left: var(--button-padding-x-small);
+  padding-right: var(--button-padding-x-small);
+  font-size: 0.75rem;
+}
+.btn-size-default {
+  height: var(--button-height-default);
+  padding-left: var(--button-padding-x-default);
+  padding-right: var(--button-padding-x-default);
+  font-size: 0.875rem;
+}
+.btn-size-large {
+  height: var(--button-height-large);
+  padding-left: var(--button-padding-x-large);
+  padding-right: var(--button-padding-x-large);
+  font-size: 1rem;
+}
+
+/* Icon-only buttons: sm=24×24 (icon 12px), md=36×36 (icon 16px), lg=44×44 (icon 18px) */
+.btn-icon-small {
+  width: var(--button-height-small);
+  min-width: var(--button-height-small);
+  height: var(--button-height-small);
+  padding: 0;
+}
+.btn-icon-small svg {
+  width: 12px;
+  height: 12px;
+}
+.btn-icon-default {
+  width: var(--button-height-default);
+  min-width: var(--button-height-default);
+  height: var(--button-height-default);
+  padding: 0;
+}
+.btn-icon-default svg {
+  width: 16px;
+  height: 16px;
+}
+.btn-icon-large {
+  width: var(--button-height-large);
+  min-width: var(--button-height-large);
+  height: var(--button-height-large);
+  padding: 0;
+}
+.btn-icon-large svg {
+  width: 18px;
+  height: 18px;
+}

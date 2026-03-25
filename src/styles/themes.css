@@ -1,0 +1,62 @@
+/* Light theme — Neon Blue accent, glassmorphism, always light. */
+:root {
+  --color-bg: #f0f6ff;
+  --color-bg-alt: #e8effd;
+  --color-card: rgba(255, 255, 255, 0.72);
+  --color-card-muted: rgba(240, 246, 255, 0.8);
+  --color-card-strong: rgba(255, 255, 255, 0.92);
+  --color-border: rgba(64, 96, 240, 0.16);
+  --color-border-strong: rgba(64, 96, 240, 0.45);
+  --color-text: #0f172a;
+  --color-text-inverse: #ffffff;
+  --color-muted: #64748b;
+  --color-primary: #4060f0;
+  --color-primary-strong: #2a42cc;
+  --color-primary-soft: rgba(64, 96, 240, 0.12);
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --hero-glow: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(64, 96, 240, 0.18) 0%, transparent 70%);
+  --bg-gradient: linear-gradient(135deg, #f0f6ff 0%, #eef4ff 45%, #f3eeff 100%);
+  --text-soft: #475569;
+  --text-muted: #64748b;
+  --space-3: 0.75rem;
+  --radius-pill: 999px;
+}
+
+:root[data-theme="light"],
+:root[data-theme="dark"] {
+  --color-bg: #f0f6ff;
+  --color-bg-alt: #e8effd;
+  --color-card: rgba(255, 255, 255, 0.72);
+  --color-card-muted: rgba(240, 246, 255, 0.8);
+  --color-card-strong: rgba(255, 255, 255, 0.92);
+  --color-border: rgba(64, 96, 240, 0.16);
+  --color-border-strong: rgba(64, 96, 240, 0.45);
+  --color-text: #0f172a;
+  --color-text-inverse: #ffffff;
+  --color-muted: #64748b;
+  --color-primary: #4060f0;
+  --color-primary-strong: #2a42cc;
+  --color-primary-soft: rgba(64, 96, 240, 0.12);
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --hero-glow: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(64, 96, 240, 0.18) 0%, transparent 70%);
+  --bg-gradient: linear-gradient(135deg, #f0f6ff 0%, #eef4ff 45%, #f3eeff 100%);
+  --text-soft: #475569;
+  --text-muted: #64748b;
+  --space-3: 0.75rem;
+  --radius-pill: 999px;
+}
+
+/* Force main site to light theme */
+html {
+  background: #f0f6ff;
+  color: #0f172a;
+}
+body {
+  background: linear-gradient(135deg, #f0f6ff 0%, #eef4ff 45%, #f3eeff 100%) !important;
+  background-attachment: fixed !important;
+  color: #0f172a !important;
+}

@@ -1,0 +1,140 @@
+:root {
+  --bg-base: var(--color-bg);
+  --bg-deep: var(--color-bg-alt);
+  --bg-card: var(--color-card);
+  --bg-card-2: var(--color-card-muted);
+  --text-main: var(--color-text);
+  --text-soft: var(--color-muted);
+  --text-muted: var(--color-muted);
+  --border-soft: var(--color-border);
+  --accent: var(--color-primary);
+  --accent-strong: var(--color-primary-strong);
+  --green-1: var(--color-success);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--color-text);
+  font-family: "Outfit", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-elements-page {
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding-top: 4.5rem;
+}
+
+.app-elements-btn {
+  background: var(--color-card);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+.app-elements-btn:hover {
+  border-color: var(--color-border-strong);
+}
+
+.app-sidebar {
+  background: var(--color-bg);
+  border-color: var(--color-border);
+}
+.app-sidebar-input {
+  background: var(--color-card);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+.app-sidebar-input::placeholder {
+  color: var(--color-muted);
+}
+.app-sidebar-input:focus {
+  outline: none;
+  border-color: var(--color-border-strong);
+}
+.app-sidebar-link {
+  color: var(--color-muted);
+}
+.app-sidebar-link:hover {
+  background: var(--color-primary-soft);
+  color: var(--color-text);
+}
+.app-sidebar-link-active {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.app-detail-tab-active {
+  background: var(--color-card);
+  color: var(--color-text);
+}
+.app-detail-border {
+  border-color: var(--color-border);
+}
+.app-preview-dark {
+  background: var(--color-bg);
+}
+.app-detail-code-bg {
+  background: var(--color-card);
+}
+.app-variant-card {
+  background: var(--color-card);
+  border-color: var(--color-border);
+}
+.app-variant-card-active {
+  border-color: var(--color-border-strong);
+}
+
+.element-card {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(64, 96, 240, 0.15);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              border-color 0.3s ease;
+}
+.element-card:hover {
+  border-color: rgba(64, 96, 240, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(64, 96, 240, 0.15);
+}
+
+/* Legacy classes kept for detail page compatibility */
+.app-element-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+}
+.app-element-card:hover {
+  border-color: var(--color-border-strong);
+}
+.app-element-card-preview {
+  background: var(--color-bg);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

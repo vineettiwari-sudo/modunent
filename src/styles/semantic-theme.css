@@ -1,0 +1,70 @@
+/**
+ * Semantic theme tokens — light mode, neon blue accent.
+ */
+
+/* System constraints */
+:root {
+  --control-sm: 32px;
+  --control-md: 36px;
+  --control-lg: 44px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --icon-sm: 14px;
+  --icon-md: 16px;
+  --icon-lg: 18px;
+}
+
+/* Light theme: white surface, neon blue primary */
+:root {
+  --surface: 240 246 255;
+  --elevated: 255 255 255;
+  --card: 255 255 255;
+  --foreground: 15 23 42;
+  --border: 64 96 240;
+  --primary: 64 96 240;
+  --primary-foreground: 255 255 255;
+  --secondary: 100 116 139;
+  --muted: 100 116 139;
+}
+
+.dark {
+  --surface: 240 246 255;
+  --elevated: 255 255 255;
+  --card: 255 255 255;
+  --foreground: 15 23 42;
+  --border: 64 96 240;
+  --primary: 64 96 240;
+  --primary-foreground: 255 255 255;
+  --secondary: 100 116 139;
+  --muted: 100 116 139;
+}
+
+.light,
+:root[data-theme="light"] {
+  --surface: 240 246 255;
+  --elevated: 255 255 255;
+  --card: 255 255 255;
+  --foreground: 15 23 42;
+  --border: 64 96 240;
+  --primary: 64 96 240;
+  --primary-foreground: 255 255 255;
+  --secondary: 100 116 139;
+  --muted: 100 116 139;
+}
+
+@keyframes progress-indeterminate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
